@@ -1,0 +1,22 @@
+body {
+  padding: 150px;
+}
+
+body .trigger {
+  width: 200px;
+  height: 200px;
+  border: 5px solid lightblue;
+  background-color: lightgrey;
+}
+
+body .trigger .box {
+  display: inline-block;
+  background-color: lightcoral;
+  width: 200px;
+  height: 200px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+/*# sourceMappingURL=style.css.map */
