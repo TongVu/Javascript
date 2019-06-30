@@ -1,0 +1,267 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: darkslategray;
+}
+
+html header,
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 75px;
+  border-radius: 8px;
+  background-color: snow;
+}
+
+html header .title,
+body header .title {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+html main,
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
+  height: 85vh;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0 100%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0 100%, 0 0);
+  background-color: lightslategrey;
+}
+
+html footer,
+body footer {
+  margin: 0;
+  padding: 15px;
+  width: 100vw;
+  height: 75px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: snow;
+}
+
+.content--form {
+  margin: 0;
+  padding: 30px;
+  width: 30vw;
+}
+
+.content--form .form-budget,
+.content--form .form-expense {
+  margin: 15px 15px;
+  padding: 15px 20px;
+  width: 450px;
+}
+
+.content--form .form-budget .form-title,
+.content--form .form-expense .form-title {
+  margin: 0 0;
+  padding-bottom: 15px;
+}
+
+.content--form .form-budget input[type="text"],
+.content--form .form-expense input[type="text"] {
+  display: block;
+  padding-left: 15px;
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
+
+.content--form .form-budget {
+  border-radius: 8px;
+  border: 2px solid lightgreen;
+}
+
+.content--form .form-expense {
+  margin-top: 120px;
+  border-radius: 8px;
+  border: 2px solid lightcoral;
+}
+
+.content--form .btn {
+  display: block;
+  margin-top: 15px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  -webkit-box-shadow: 2px 2px 5px snow;
+          box-shadow: 2px 2px 5px snow;
+  font-size: 16px;
+}
+
+.content--form .btn:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.content--form .btn__green {
+  color: lightseagreen;
+  border: 2px solid lightgreen;
+}
+
+.content--form .btn__red {
+  color: lightcoral;
+  border: 2px solid lightcoral;
+}
+
+.content--summary {
+  margin: 0;
+  padding: 30px;
+  width: 60vw;
+}
+
+.content--summary .budget-expenses-balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-radius: 8px;
+  background-color: snow;
+}
+
+.content--summary .budget-expenses-balance .child {
+  width: 30%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.content--summary .budget-expenses-balance .child h3 {
+  text-align: center;
+}
+
+.content--summary .budget-expenses-balance .child .child--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 100%;
+  height: 120px;
+}
+
+.content--summary .budget-expenses-balance .child .child--img img {
+  width: 100px;
+  height: 100px;
+}
+
+.content--summary .budget-expenses-balance .child .amount {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.content--summary .budget-expenses-balance .child .amount__green {
+  color: lightseagreen;
+}
+
+.content--summary .budget-expenses-balance .child .amount__red {
+  color: lightcoral;
+}
+
+.content--summary .expenses-list {
+  margin: 15px 0px;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  border-radius: 8px;
+}
+
+.content--summary .expenses-list .expenses-list--child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0px;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  background-color: lightcyan;
+}
+
+.content--summary .expenses-list .expenses-list--child .child--name,
+.content--summary .expenses-list .expenses-list--child .child--amount,
+.content--summary .expenses-list .expenses-list--child .del-btn,
+.content--summary .expenses-list .expenses-list--child .blank {
+  width: 30%;
+}
+
+.content--summary .expenses-list .expenses-list--child .blank,
+.content--summary .expenses-list .expenses-list--child .del-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: 3px 3px 8px darkslategrey;
+          box-shadow: 3px 3px 8px darkslategrey;
+}
+
+.content--summary .expenses-list .expenses-list--child .blank:active,
+.content--summary .expenses-list .expenses-list--child .del-btn:active {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+/*# sourceMappingURL=style.css.map */
