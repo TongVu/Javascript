@@ -1,0 +1,114 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+html main,
+body main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: lightslategray;
+}
+
+html main .hamburger,
+body main .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+  width: 28px;
+  height: 22px;
+}
+
+html main .hamburger .line,
+body main .hamburger .line {
+  margin-bottom: 4px;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: snow;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+html main .hamburger .top,
+body main .hamburger .top {
+  -webkit-transform: translateY(8px) rotateZ(135deg);
+          transform: translateY(8px) rotateZ(135deg);
+}
+
+html main .hamburger .middle,
+body main .hamburger .middle {
+  width: 4px;
+}
+
+html main .hamburger .bottom,
+body main .hamburger .bottom {
+  -webkit-transform: translateY(-8px) rotateZ(45deg);
+          transform: translateY(-8px) rotateZ(45deg);
+}
+
+html main .nav-bar,
+body main .nav-bar {
+  margin: 0;
+  padding: 2rem 0;
+  display: block;
+  height: 350px;
+  -webkit-transition: -webkit-clip-path 0.5s;
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+  background-color: lightseagreen;
+  -webkit-clip-path: circle(0% at 0 0);
+          clip-path: circle(0% at 0 0);
+}
+
+html main .nav-bar .item,
+body main .nav-bar .item {
+  margin: 0;
+  padding: 15px;
+  font-size: 28px;
+  color: snow;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+html main .nav-bar .item:hover,
+body main .nav-bar .item:hover {
+  color: darkorange;
+  -webkit-box-shadow: 2px 2px 10px snow;
+          box-shadow: 2px 2px 10px snow;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+html main .clip,
+body main .clip {
+  -webkit-clip-path: circle(30% at 0 0);
+          clip-path: circle(30% at 0 0);
+}
+/*# sourceMappingURL=style.css.map */
